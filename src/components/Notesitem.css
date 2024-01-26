@@ -1,0 +1,50 @@
+/* Noteitem.css */
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px; /* Set a minimum height for the card */
+    width: 100%; /* Ensure the card expands to fill its container */
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-body {
+    padding: 10px;
+    flex-grow: 1; /* Allow the card body to grow to fill the available space */
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+  .card-icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .card-icons i {
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .card-icons i:hover {
+    color: #007bff;
+  }
+  .card {
+    /* Existing styles */
+  
+    max-height: 300px; /* Set a maximum height for the card */
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds maximum height */
+  }
+    

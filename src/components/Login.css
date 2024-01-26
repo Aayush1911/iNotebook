@@ -1,0 +1,55 @@
+/* Login.css or your custom CSS file */
+
+/* Use a unique class name prefix for the Login component */
+.login-container {
+    max-width: 500px;
+    margin: 20px auto 0; /* Adjusted margin to reduce space at the top */
+    padding: 20px;
+  }
+  
+  .login-heading {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .login-label {
+    font-weight: bold;
+  }
+  
+  .login-input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  .login-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .login-btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+  }
+  
+  .login-btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
+  .login-error-message {
+    color: #dc3545;
+    margin-top: 5px;
+  }
+  
