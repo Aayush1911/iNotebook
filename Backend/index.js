@@ -16,6 +16,9 @@ app.use(cors({
 }))
 
 //Routes
+app.use('/',(req,res)=>{
+  res.send('app working')
+})
 app.use('/api/auth',require('./routes/auth'))
 app.use('/api/notes',require('./routes/notes'))
 
