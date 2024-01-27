@@ -8,7 +8,7 @@ function Signup(props) {
     const handlesubmit = async (e) => {
         e.preventDefault();
         const {name,email,password}=credentails
-        const host = "http://localhost:4000";
+        const host = "https://inotebook-roan.vercel.app";
         const response = await fetch(`${host}/api/auth/createuser`, {
           method: "POST",
           headers: {
