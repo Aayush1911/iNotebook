@@ -9,6 +9,12 @@ const port = 4000
 
 app.use(express.json())
 
+app.use(cors({
+  orgin:["https://deploy-mern-1whq.vercel.app"],
+  methods:["POST","GET"],
+  credentials:true
+}))
+
 //Routes
 app.use('/api/auth',require('./routes/auth'))
 app.use('/api/notes',require('./routes/notes'))
