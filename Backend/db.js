@@ -1,5 +1,7 @@
 const mongoose=require('mongoose');
-const mongoURL='mongodb+srv://aayush191102:Aayush1911@cluster0.ixqsot4.mongodb.net/iNotebook'
+const dotenv=require('dotenv')
+dotenv.config({path:'./.env'})
+const mongoURL=process.env.MONGOURL
 
 const connectToMongo=()=>{
         mongoose.connect(mongoURL)

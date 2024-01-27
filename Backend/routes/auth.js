@@ -5,6 +5,8 @@ const { body, validationResult } = require("express-validator");
 var bcrypt = require("bcryptjs");
 var jwt = require("jsonwebtoken");
 const fetchuser = require("../middleware/fetchuser");
+const dotenv=require('dotenv')
+dotenv.config({path:'./.env'})
 
 //Route 1 create a user  http://localhost:4000/api/auth/createuser
 router.post(
@@ -41,7 +43,7 @@ router.post(
           id:user.id
         }
       }
-      const JWT_SECRET='sdfvdvdzrbzdrbtbvtrhbtbteghter'
+      const JWT_SECRET=process.env.AUTH_TOKEN
       const authtoken=jwt.sign(data,JWT_SECRET)
       success=true
       res.json({success,authtoken});
@@ -83,7 +85,7 @@ router.post(
           id:user.id
         }
       }
-      const JWT_SECRET='sdfvdvdzrbzdrbtbvtrhbtbteghter'
+      const JWT_SECRET=process.env.AUTH_TOKEN
       const authtoken=jwt.sign(data,JWT_SECRET)
       success=true
       res.json({success,authtoken})
