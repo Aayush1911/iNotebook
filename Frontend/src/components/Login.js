@@ -6,7 +6,7 @@ function Login(props) {
     let navigate=useNavigate()
   const handlesubmit = async (e) => {
     e.preventDefault();
-    const host = "https://i-notebook-r2vy.vercel.app/";
+    const host = "https://i-notebook-r2vy.vercel.app";
     const response = await fetch(`${host}/api/auth/login`, {
       method: "POST",
       headers: {
