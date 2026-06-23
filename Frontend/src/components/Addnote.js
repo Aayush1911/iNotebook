@@ -65,7 +65,7 @@ function Addnote(props) {
               value={note.tag}
             />
           </div>
-          <button disabled={note.title.length<5 || note.description.length<5} type="submit" onClick={handleclick} className="btn btn-primary">
+          <button  type="submit" onClick={handleclick} className="btn btn-primary">
             Add Note
           </button>
         </form>
